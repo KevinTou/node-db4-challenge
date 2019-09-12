@@ -6,7 +6,7 @@ const ingredientRouter = require('./ingredients/ingredient-router.js');
 const server = express();
 
 server.use(express.json());
-// server.use('/api/recipes', recipeRouter);
+server.use('/api/recipes', recipeRouter);
 // server.use('/api/ingredients', ingredientRouter);
 
 server.get('/', (req, res) => {
